@@ -1,12 +1,12 @@
 # Absogrow AI
 
-> Absogrow AI is a digital marketing and AI automation agency in Nairobi, Kenya. It builds websites, runs social media and paid ads, and sets up AI automation for Kenyan businesses such as hotels, dental clinics and opticians.
+> Absogrow AI is a data-led digital marketing and AI automation agency in Nairobi, Kenya, founded by data scientist Emilio Mutisya. It builds websites, runs social media and paid ads, and sets up AI automation for Kenyan businesses such as hotels, dental clinics and opticians, and it measures the results so every decision is based on numbers.
 
 ## Key facts
 - Business name: Absogrow AI
 - Location: Nairobi, Kenya
 - Service area: Nairobi and the rest of Kenya
-- Founder: Emilio Mutisya, Founder and Lead Strategist
+- Founder: Emilio Mutisya, Founder, Data Scientist and Lead Strategist
 - Phone and WhatsApp: +254 745 317 709
 - Email: absogrow@gmail.com
 - Profile: https://instagram.com/absogrow_ai
@@ -17,8 +17,16 @@
 - [Social media and content](https://emiliomutisya254ke.github.io/absogrow/services/social-media-and-content): Posts, reels and a plan your customers actually see.
 - [Paid ads](https://emiliomutisya254ke.github.io/absogrow/services/paid-ads): Meta and Google ads aimed at the people who buy, with clear reporting.
 - [SEO and Google Business Profile](https://emiliomutisya254ke.github.io/absogrow/services/seo-and-google-business-profile): Show up when people nearby search for what you do.
+- [Analytics and reporting](https://emiliomutisya254ke.github.io/absogrow/services/analytics-and-reporting): Tracking and monthly reports that show where your customers come from.
 - [Video](https://emiliomutisya254ke.github.io/absogrow/services/video): Videography and editing for reels, adverts and events.
 - [AI automation](https://emiliomutisya254ke.github.io/absogrow/services/ai-automation): WhatsApp replies, booking follow-ups and lead tracking that run on their own.
+
+## What makes it different
+Absogrow AI is run by a data scientist. Emilio Mutisya uses SQL and data analysis to find what brings customers.
+- We measure before we market: The free review checks your website speed, Google listing and social pages, and puts what is costing you customers in a written report.
+- Every channel is tracked: We set up tracking so you can see which post, advert or search brought each enquiry.
+- Decisions come from numbers: What works gets more of the budget. What does not is changed or stopped.
+- Reports in plain English: Each month you get the numbers that matter, such as enquiries, bookings and cost, explained without jargon.
 
 ## Who it works with
 - Hotels and lodges: A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
