@@ -1,0 +1,292 @@
+# Absogrow AI
+
+> Absogrow AI is a data-led digital marketing and AI automation agency in Nairobi, Kenya, founded by data scientist, machine learning expert and professional content creator Emilio Mutisya. It builds websites, runs social media and paid ads, and sets up AI automation for Kenyan businesses such as hotels, dental clinics and opticians, and it measures the results so every decision is based on numbers.
+
+## Key facts
+- Business name: Absogrow AI
+- Location: Nairobi, Kenya
+- Service area: Nairobi and the rest of Kenya
+- Founder: Emilio Mutisya, Founder, Data Scientist and Content Creator
+- Phone and WhatsApp: +254 745 317 709
+- Email: absogrow@gmail.com
+- Profile: https://instagram.com/absogrow_ai
+- Website: https://absogrow.github.io/
+
+## Services
+- [Websites](https://absogrow.github.io/services/websites): Fast, mobile-first websites that turn visitors into calls and bookings.
+- [Social media and content](https://absogrow.github.io/services/social-media-and-content): Posts, reels and a plan your customers actually see.
+- [Paid ads](https://absogrow.github.io/services/paid-ads): Meta and Google ads aimed at the people who buy, with clear reporting.
+- [SEO and Google Business Profile](https://absogrow.github.io/services/seo-and-google-business-profile): Show up when people nearby search for what you do.
+- [Analytics and reporting](https://absogrow.github.io/services/analytics-and-reporting): Tracking and monthly reports that show where your customers come from.
+- [Video](https://absogrow.github.io/services/video): Videography and editing for reels, adverts and events.
+- [AI automation](https://absogrow.github.io/services/ai-automation): WhatsApp replies, booking follow-ups and lead tracking that run on their own.
+
+## What makes it different
+Absogrow AI is run by a data scientist. Emilio Mutisya uses Python, SQL, Power BI and machine learning to find what brings customers.
+- We measure before we market: The free review checks your website speed, Google listing and social pages, and puts what is costing you customers in a written report.
+- Every channel is tracked: We set up tracking so you can see which post, advert or search brought each enquiry.
+- Decisions come from numbers: What works gets more of the budget. What does not is changed or stopped.
+- Reports in plain English: Each month you get the numbers that matter, such as enquiries, bookings and cost, explained without jargon.
+
+## Who it works with
+- [Hotels and lodges](https://absogrow.github.io/for/hotels-and-lodges): A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
+- [Dental and medical clinics](https://absogrow.github.io/for/dental-and-medical-clinics): Patients find you on Google, book easily, and get reminders so fewer appointments are missed.
+- [Opticians](https://absogrow.github.io/for/opticians): Reels and Meta ads that bring people in for eye tests and frames.
+- [Shops and online stores](https://absogrow.github.io/for/shops-and-online-stores): An online shop with product search, a cart and ordering on WhatsApp.
+- [Restaurants and cafes](https://absogrow.github.io/for/restaurants-and-cafes): A menu that opens on a phone, a Google listing with photos, and posts that bring people in.
+- [Car dealers](https://absogrow.github.io/for/car-dealers): Car listings people can browse, with finance pages and a call button.
+
+## How it works with clients
+- A free review first: You see what is costing you customers before you pay for anything.
+- Prices in KES, in writing: You get a written quote with no hidden costs.
+- No long contracts: You stay because it works, not because you signed something.
+- A report every month: We show you what we did and what changed.
+- Built for phones first: Your customers are on a phone and mobile data, so that is what we build for.
+- One team for everything: Website, social media, ads, video and automation in one place.
+
+## Packages and prices
+Pricing is tailored to each client. Every quote starts with a free review, then a written quote in Kenyan shillings (KES), and the client chooses what to include.
+
+- Starter: From KES 15,000 per month for social media. A website is a one-off price, quoted separately. A website, or social media on one platform.
+  - Your choice: a mobile-first website, or one social media platform managed for you
+  - 12 posts a month, 4 of them reels
+  - 1 ad campaign set up and run
+  - A monthly report
+- Growth: From KES 35,000 per month. The website is a one-off price, quoted separately. A website plus social media plus ads.
+  - A fast, mobile-first website
+  - Instagram, Facebook and TikTok managed for you
+  - 20 posts a month, 8 of them reels
+  - 2 ad campaigns set up and run
+  - Replies to comments and messages
+  - Google Business Profile kept up to date
+  - A monthly report
+- Automation: From KES 60,000 per month. The website and automation setup are one-off prices, quoted separately. Everything in Growth, plus AI follow-ups and lead tracking.
+  - Everything in Growth
+  - WhatsApp auto-replies to new enquiries
+  - Booking follow-ups and reminders
+  - Lead tracking, so no enquiry is forgotten
+  - A monthly strategy call
+  - A report on the leads and bookings that came in
+
+Ad spend is paid by you directly to Meta, Google or TikTok, on top of our fee.
+
+## Work
+- Imara Tools (Tools and equipment shop): Website design and build: an online shop for power tools, generators and pumps, with product search and a WhatsApp button. https://imaratools.co.ke
+- Sialkot Motor (Car dealership, Nairobi): Website design and build: car listings, car finance and import pages, and a call button. https://sialkotmotorltd.com
+- Green World Big Data (Data and technology): Website design and build for a transport technology and data company working across Africa. https://greenworldbigdata.com
+- Digital City Electronics (Electronics shop, Nairobi and Eldoret): Website design and build: an online electronics shop with categories, a wishlist and a cart. https://digitalcityelectronics.com
+- OptiPlus Kenya (Optician): Social reels and Meta ads.
+- The BLVCKS (Events): Events and creative production.
+
+## Businesses worked with
+OptiPlus Kenya, The BLVCKS, Imara Tools, Sialkot Motor, Green World Big Data, Digital City Electronics, Nobel Lending, Wanslu
+
+## Common questions
+### How much does a website cost?
+A new website from Absogrow AI starts from KES 70,000, and a revamp of a website you already have starts from KES 50,000. The exact price depends on the pages and features you need, so we send a written quote in KES after a free review.
+
+### How long does it take?
+A new website usually takes 5 to 7 days once we have your photos and text. A revamp of an existing website usually takes 3 to 5 days.
+
+### Do I own my website?
+Yes. Once it is paid for, the website, the domain name and everything on it belong to you, and we hand over all the logins.
+
+### Can you manage our Instagram and Facebook?
+Yes. Absogrow AI plans, creates and posts your content on Instagram and Facebook, and can run Meta ads alongside it. Monthly social media management starts from KES 15,000, and the money spent on ads is paid by you directly to Meta.
+
+### What does "AI automation" mean for a business like mine?
+It means the routine follow-up happens on its own. New WhatsApp enquiries get an instant reply, customers get booking reminders, and every lead is saved in one list so none is forgotten. It suits hotels, clinics, shops and any Kenyan business that gets a lot of enquiries.
+
+## Sections of the website
+- [Services](https://absogrow.github.io/#services)
+- [Work](https://absogrow.github.io/#work)
+- [How it works](https://absogrow.github.io/#how)
+- [About](https://absogrow.github.io/#about)
+- [Pricing](https://absogrow.github.io/#pricing)
+- [Common questions](https://absogrow.github.io/#faq)
+- [Contact](https://absogrow.github.io/#contact)
+
+Last updated: 26 November 2026
+
+---
+
+# Full text of each page
+
+## Websites for Kenyan businesses
+https://absogrow.github.io/services/websites
+
+Fast, mobile-first websites that turn visitors into calls and bookings.
+
+What is included:
+- Design made for phones first
+- Clear buttons to call, WhatsApp or book
+- Fast loading on mobile data
+- Basic SEO and Google set-up
+- Your own domain and logins handed over
+
+Most of your customers will open your website on a phone, often from a WhatsApp link. We design for that first, so pages load quickly and the next step is always one tap away.
+
+We build new websites and fix existing ones. A fix can mean faster pages, working links and buttons, correct Google details and a WhatsApp button that opens properly.
+
+## Social media and content for Kenyan businesses
+https://absogrow.github.io/services/social-media-and-content
+
+Posts, reels and a plan your customers actually see.
+
+What is included:
+- A monthly content plan
+- Posts and reels designed and written for you
+- Posting on the agreed days
+- Replies to comments and messages on larger plans
+- A monthly report
+
+We plan the month, create the posts and reels, and publish them for you on Instagram, Facebook and TikTok.
+
+You approve the plan before anything goes out, and at the end of each month we show you what was posted and how people responded.
+
+Your content is planned and made under a professional content creator, and measured by a data scientist, so you get posts people want to watch and proof of what they bring in.
+
+## Paid ads for Kenyan businesses
+https://absogrow.github.io/services/paid-ads
+
+Meta and Google ads aimed at the people who buy, with clear reporting.
+
+What is included:
+- Meta ads on Facebook and Instagram
+- Google ads
+- Audiences chosen around who buys from you
+- Ad designs and wording
+- Clear reporting on what was spent and what came back
+
+We set up and run your adverts, aimed at people who are likely to buy and close enough to reach you.
+
+The money spent on the adverts is paid by you directly to Meta or Google, on top of our fee, so you always see exactly where it goes.
+
+## SEO and Google Business Profile for Kenyan businesses
+https://absogrow.github.io/services/seo-and-google-business-profile
+
+Show up when people nearby search for what you do.
+
+What is included:
+- Google Business Profile set up or claimed
+- Correct name, phone, hours and location
+- Photos and regular updates
+- On-page SEO for your website
+- Help asking real customers for reviews
+
+When someone nearby searches for what you sell, your business should appear with the right phone number, opening hours and photos.
+
+We set up and look after your Google Business Profile and make sure your website tells Google clearly what you do and where.
+
+## Analytics and reporting for Kenyan businesses
+https://absogrow.github.io/services/analytics-and-reporting
+
+Tracking and monthly reports that show where your customers come from.
+
+What is included:
+- Tracking set up on your website and adverts
+- Enquiries traced back to the post, advert or search that brought them
+- A monthly report in plain English
+- Clear recommendations on where to spend next
+
+Most businesses cannot say which part of their marketing brings customers. We set up the tracking and read the numbers for you, using the same data analysis methods used in larger companies.
+
+Each month you get a short report: what came in, where it came from, what it cost, and what we recommend doing next.
+
+## Video for Kenyan businesses
+https://absogrow.github.io/services/video
+
+Videography and editing for reels, adverts and events.
+
+What is included:
+- Filming at your business or event
+- Editing for reels and adverts
+- Captions and voiceover where needed
+- Versions sized for each platform
+
+Short video is what people watch most on social media. We film and edit reels, adverts and event coverage that show your business as it really is.
+
+The work is led by a professional content creator, so the filming and editing follow what performs on each platform today.
+
+## AI automation for Kenyan businesses
+https://absogrow.github.io/services/ai-automation
+
+WhatsApp replies, booking follow-ups and lead tracking that run on their own.
+
+What is included:
+- Instant WhatsApp replies to new enquiries
+- Booking reminders and follow-ups
+- Every lead saved in one list
+- Set up around how your business already works
+
+Many sales are lost because a message was answered late or a follow-up was forgotten. Automation handles the routine part: a quick first reply, a reminder before a booking, a follow-up afterwards.
+
+You and your team still handle the real conversations. The system makes sure nobody is left waiting.
+
+## Digital marketing for hotels and lodges in Kenya
+https://absogrow.github.io/for/hotels-and-lodges
+
+A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
+
+Guests compare hotels on their phones before they ever call. We give you a fast website with clear room information and a direct way to enquire or book, so fewer bookings are lost to slow pages or missing details.
+
+We also keep your Google Business Profile correct and full of real photos, run social media that shows the place as it is, and can set up WhatsApp replies so no enquiry waits overnight. Every month you see where the enquiries came from.
+
+## Digital marketing for dental and medical clinics in Kenya
+https://absogrow.github.io/for/dental-and-medical-clinics
+
+Patients find you on Google, book easily, and get reminders so fewer appointments are missed.
+
+Patients search for a clinic near them and choose one that looks trustworthy and is easy to reach. We make sure your clinic appears on Google with the right services, hours and phone number, and that your website makes booking simple.
+
+Automated reminders on WhatsApp help reduce missed appointments, and a monthly report shows which searches, posts or adverts are bringing new patients.
+
+## Digital marketing for opticians in Kenya
+https://absogrow.github.io/for/opticians
+
+Reels and Meta ads that bring people in for eye tests and frames.
+
+People buy eyewear from places they have seen and trust. We create reels and Meta adverts that show your frames and eye-test service to people nearby, and send them to a page or a WhatsApp chat where they can ask and book.
+
+We track which adverts bring enquiries, so the budget goes to what works.
+
+## Digital marketing for shops and online stores in Kenya
+https://absogrow.github.io/for/shops-and-online-stores
+
+An online shop with product search, a cart and ordering on WhatsApp.
+
+A shop website has one job: let a customer find a product and order it without friction. We build online shops with search, categories, a cart and WhatsApp ordering, designed for phones and mobile data.
+
+Social media and adverts then bring the right people to the shop, and the numbers show which products and adverts actually sell.
+
+## Digital marketing for restaurants and cafes in Kenya
+https://absogrow.github.io/for/restaurants-and-cafes
+
+A menu that opens on a phone, a Google listing with photos, and posts that bring people in.
+
+People decide where to eat by looking at photos, the menu and the map. We give you a menu page that opens quickly on a phone, a Google listing with real photos and correct hours, and regular posts and reels of your food and space.
+
+You see each month what people viewed and what brought them in.
+
+## Digital marketing for car dealers in Kenya
+https://absogrow.github.io/for/car-dealers
+
+Car listings people can browse, with finance pages and a call button.
+
+Car buyers browse listings on their phones long before they visit a yard. We build websites where stock is easy to browse, with finance and import information and a call or WhatsApp button on hand.
+
+Video and adverts put your cars in front of people looking to buy, and tracking shows which listings and adverts bring calls.
+
+## About the founder
+Emilio Mutisya, Founder, Data Scientist and Content Creator.
+
+I am a data scientist and machine learning expert with 4 years in digital marketing, so I do not guess. I use Python, SQL and Power BI to look at the numbers before we touch your marketing: how fast your website loads, what people search before they find you, and which posts and adverts bring enquiries. Then we put your budget where the customers are.
+
+I am also a content creator by profession. I know what makes people stop scrolling, and I use the numbers to prove which content actually brings customers. You get both sides from one person: the creative and the data.
+
+I started Absogrow AI to give Kenyan businesses the same digital tools big brands use, at a price that makes sense here.
+
+- Content creator by profession
+- 4 years of experience in digital marketing and data
+- Trained in Python, SQL and Power BI at ALX
+- ALX Professional Foundations, completed May 2026

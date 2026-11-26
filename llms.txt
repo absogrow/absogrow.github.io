@@ -29,12 +29,12 @@ Absogrow AI is run by a data scientist. Emilio Mutisya uses Python, SQL, Power B
 - Reports in plain English: Each month you get the numbers that matter, such as enquiries, bookings and cost, explained without jargon.
 
 ## Who it works with
-- Hotels and lodges: A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
-- Dental and medical clinics: Patients find you on Google, book easily, and get reminders so fewer appointments are missed.
-- Opticians: Reels and Meta ads that bring people in for eye tests and frames.
-- Shops and online stores: An online shop with product search, a cart and ordering on WhatsApp.
-- Restaurants and cafes: A menu that opens on a phone, a Google listing with photos, and posts that bring people in.
-- Car dealers: Car listings people can browse, with finance pages and a call button.
+- [Hotels and lodges](https://absogrow.github.io/for/hotels-and-lodges): A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
+- [Dental and medical clinics](https://absogrow.github.io/for/dental-and-medical-clinics): Patients find you on Google, book easily, and get reminders so fewer appointments are missed.
+- [Opticians](https://absogrow.github.io/for/opticians): Reels and Meta ads that bring people in for eye tests and frames.
+- [Shops and online stores](https://absogrow.github.io/for/shops-and-online-stores): An online shop with product search, a cart and ordering on WhatsApp.
+- [Restaurants and cafes](https://absogrow.github.io/for/restaurants-and-cafes): A menu that opens on a phone, a Google listing with photos, and posts that bring people in.
+- [Car dealers](https://absogrow.github.io/for/car-dealers): Car listings people can browse, with finance pages and a call button.
 
 ## How it works with clients
 - A free review first: You see what is costing you customers before you pay for anything.
