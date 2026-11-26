@@ -10,16 +10,16 @@
 - Phone and WhatsApp: +254 745 317 709
 - Email: absogrow@gmail.com
 - Profile: https://instagram.com/absogrow_ai
-- Website: https://emiliomutisya254ke.github.io/absogrow/
+- Website: https://absogrow.github.io/
 
 ## Services
-- [Websites](https://emiliomutisya254ke.github.io/absogrow/services/websites): Fast, mobile-first websites that turn visitors into calls and bookings.
-- [Social media and content](https://emiliomutisya254ke.github.io/absogrow/services/social-media-and-content): Posts, reels and a plan your customers actually see.
-- [Paid ads](https://emiliomutisya254ke.github.io/absogrow/services/paid-ads): Meta and Google ads aimed at the people who buy, with clear reporting.
-- [SEO and Google Business Profile](https://emiliomutisya254ke.github.io/absogrow/services/seo-and-google-business-profile): Show up when people nearby search for what you do.
-- [Analytics and reporting](https://emiliomutisya254ke.github.io/absogrow/services/analytics-and-reporting): Tracking and monthly reports that show where your customers come from.
-- [Video](https://emiliomutisya254ke.github.io/absogrow/services/video): Videography and editing for reels, adverts and events.
-- [AI automation](https://emiliomutisya254ke.github.io/absogrow/services/ai-automation): WhatsApp replies, booking follow-ups and lead tracking that run on their own.
+- [Websites](https://absogrow.github.io/services/websites): Fast, mobile-first websites that turn visitors into calls and bookings.
+- [Social media and content](https://absogrow.github.io/services/social-media-and-content): Posts, reels and a plan your customers actually see.
+- [Paid ads](https://absogrow.github.io/services/paid-ads): Meta and Google ads aimed at the people who buy, with clear reporting.
+- [SEO and Google Business Profile](https://absogrow.github.io/services/seo-and-google-business-profile): Show up when people nearby search for what you do.
+- [Analytics and reporting](https://absogrow.github.io/services/analytics-and-reporting): Tracking and monthly reports that show where your customers come from.
+- [Video](https://absogrow.github.io/services/video): Videography and editing for reels, adverts and events.
+- [AI automation](https://absogrow.github.io/services/ai-automation): WhatsApp replies, booking follow-ups and lead tracking that run on their own.
 
 ## What makes it different
 Absogrow AI is run by a data scientist. Emilio Mutisya uses Python, SQL, Power BI and machine learning to find what brings customers.
@@ -98,12 +98,12 @@ Yes. Absogrow AI plans, creates and posts your content on Instagram and Facebook
 It means the routine follow-up happens on its own. New WhatsApp enquiries get an instant reply, customers get booking reminders, and every lead is saved in one list so none is forgotten. It suits hotels, clinics, shops and any Kenyan business that gets a lot of enquiries.
 
 ## Sections of the website
-- [Services](https://emiliomutisya254ke.github.io/absogrow/#services)
-- [Work](https://emiliomutisya254ke.github.io/absogrow/#work)
-- [How it works](https://emiliomutisya254ke.github.io/absogrow/#how)
-- [About](https://emiliomutisya254ke.github.io/absogrow/#about)
-- [Pricing](https://emiliomutisya254ke.github.io/absogrow/#pricing)
-- [Common questions](https://emiliomutisya254ke.github.io/absogrow/#faq)
-- [Contact](https://emiliomutisya254ke.github.io/absogrow/#contact)
+- [Services](https://absogrow.github.io/#services)
+- [Work](https://absogrow.github.io/#work)
+- [How it works](https://absogrow.github.io/#how)
+- [About](https://absogrow.github.io/#about)
+- [Pricing](https://absogrow.github.io/#pricing)
+- [Common questions](https://absogrow.github.io/#faq)
+- [Contact](https://absogrow.github.io/#contact)
 
 Last updated: 26 November 2026

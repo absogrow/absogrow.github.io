@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://emiliomutisya254ke.github.io/absogrow/sitemap.xml
+Sitemap: https://absogrow.github.io/sitemap.xml
