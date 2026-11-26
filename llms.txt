@@ -1,0 +1,101 @@
+# Absogrow AI
+
+> Absogrow AI is a digital marketing and AI automation agency in Nairobi, Kenya. It builds websites, runs social media and paid ads, and sets up AI automation for Kenyan businesses such as hotels, dental clinics and opticians.
+
+## Key facts
+- Business name: Absogrow AI
+- Location: Nairobi, Kenya
+- Service area: Nairobi and the rest of Kenya
+- Founder: Emilio Mutisya, Founder and Lead Strategist
+- Phone and WhatsApp: +254 745 317 709
+- Email: absogrow@gmail.com
+- Profile: https://instagram.com/absogrow_ai
+- Website: https://emiliomutisya254ke.github.io/absogrow/
+
+## Services
+- [Websites](https://emiliomutisya254ke.github.io/absogrow/services/websites): Fast, mobile-first websites that turn visitors into calls and bookings.
+- [Social media and content](https://emiliomutisya254ke.github.io/absogrow/services/social-media-and-content): Posts, reels and a plan your customers actually see.
+- [Paid ads](https://emiliomutisya254ke.github.io/absogrow/services/paid-ads): Meta and Google ads aimed at the people who buy, with clear reporting.
+- [SEO and Google Business Profile](https://emiliomutisya254ke.github.io/absogrow/services/seo-and-google-business-profile): Show up when people nearby search for what you do.
+- [Video](https://emiliomutisya254ke.github.io/absogrow/services/video): Videography and editing for reels, adverts and events.
+- [AI automation](https://emiliomutisya254ke.github.io/absogrow/services/ai-automation): WhatsApp replies, booking follow-ups and lead tracking that run on their own.
+
+## Who it works with
+- Hotels and lodges: A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.
+- Dental and medical clinics: Patients find you on Google, book easily, and get reminders so fewer appointments are missed.
+- Opticians: Reels and Meta ads that bring people in for eye tests and frames.
+- Shops and online stores: An online shop with product search, a cart and ordering on WhatsApp.
+- Restaurants and cafes: A menu that opens on a phone, a Google listing with photos, and posts that bring people in.
+- Car dealers: Car listings people can browse, with finance pages and a call button.
+
+## How it works with clients
+- A free review first: You see what is costing you customers before you pay for anything.
+- Prices in KES, in writing: You get a written quote with no hidden costs.
+- No long contracts: You stay because it works, not because you signed something.
+- A report every month: We show you what we did and what changed.
+- Built for phones first: Your customers are on a phone and mobile data, so that is what we build for.
+- One team for everything: Website, social media, ads, video and automation in one place.
+
+## Packages and prices
+Pricing is tailored to each client. Every quote starts with a free review, then a written quote in Kenyan shillings (KES), and the client chooses what to include.
+
+- Starter: From KES 15,000 per month for social media. A website is a one-off price, quoted separately. A website, or social media on one platform.
+  - Your choice: a mobile-first website, or one social media platform managed for you
+  - 12 posts a month, 4 of them reels
+  - 1 ad campaign set up and run
+  - A monthly report
+- Growth: From KES 35,000 per month. The website is a one-off price, quoted separately. A website plus social media plus ads.
+  - A fast, mobile-first website
+  - Instagram, Facebook and TikTok managed for you
+  - 20 posts a month, 8 of them reels
+  - 2 ad campaigns set up and run
+  - Replies to comments and messages
+  - Google Business Profile kept up to date
+  - A monthly report
+- Automation: From KES 60,000 per month. The website and automation setup are one-off prices, quoted separately. Everything in Growth, plus AI follow-ups and lead tracking.
+  - Everything in Growth
+  - WhatsApp auto-replies to new enquiries
+  - Booking follow-ups and reminders
+  - Lead tracking, so no enquiry is forgotten
+  - A monthly strategy call
+  - A report on the leads and bookings that came in
+
+Ad spend is paid by you directly to Meta, Google or TikTok, on top of our fee.
+
+## Work
+- Imara Tools (Tools and equipment shop): Website design and build: an online shop for power tools, generators and pumps, with product search and a WhatsApp button. https://imaratools.co.ke
+- Sialkot Motor (Car dealership, Nairobi): Website design and build: car listings, car finance and import pages, and a call button. https://sialkotmotorltd.com
+- Green World Big Data (Data and technology): Website design and build for a transport technology and data company working across Africa. https://greenworldbigdata.com
+- Digital City Electronics (Electronics shop, Nairobi and Eldoret): Website design and build: an online electronics shop with categories, a wishlist and a cart. https://digitalcityelectronics.com
+- OptiPlus Kenya (Optician): Social reels and Meta ads.
+- The BLVCKS (Events): Events and creative production.
+
+## Businesses worked with
+OptiPlus Kenya, The BLVCKS, Imara Tools, Sialkot Motor, Green World Big Data, Digital City Electronics, Nobel Lending, Wanslu
+
+## Common questions
+### How much does a website cost?
+A new website from Absogrow AI starts from KES 70,000, and a revamp of a website you already have starts from KES 50,000. The exact price depends on the pages and features you need, so we send a written quote in KES after a free review.
+
+### How long does it take?
+A new website usually takes 5 to 7 days once we have your photos and text. A revamp of an existing website usually takes 3 to 5 days.
+
+### Do I own my website?
+Yes. Once it is paid for, the website, the domain name and everything on it belong to you, and we hand over all the logins.
+
+### Can you manage our Instagram and Facebook?
+Yes. Absogrow AI plans, creates and posts your content on Instagram and Facebook, and can run Meta ads alongside it. Monthly social media management starts from KES 15,000, and the money spent on ads is paid by you directly to Meta.
+
+### What does "AI automation" mean for a business like mine?
+It means the routine follow-up happens on its own. New WhatsApp enquiries get an instant reply, customers get booking reminders, and every lead is saved in one list so none is forgotten. It suits hotels, clinics, shops and any Kenyan business that gets a lot of enquiries.
+
+## Sections of the website
+- [Services](https://emiliomutisya254ke.github.io/absogrow/#services)
+- [Work](https://emiliomutisya254ke.github.io/absogrow/#work)
+- [How it works](https://emiliomutisya254ke.github.io/absogrow/#how)
+- [About](https://emiliomutisya254ke.github.io/absogrow/#about)
+- [Pricing](https://emiliomutisya254ke.github.io/absogrow/#pricing)
+- [Common questions](https://emiliomutisya254ke.github.io/absogrow/#faq)
+- [Contact](https://emiliomutisya254ke.github.io/absogrow/#contact)
+
+Last updated: 26 November 2026
