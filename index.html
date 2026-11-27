@@ -446,6 +446,154 @@ a{color:inherit;touch-action:manipulation}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips a{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:999px;border:1px solid var(--line);background:var(--cloud);font-weight:700;text-decoration:none}
 .chips a:hover{border-color:var(--navy)}
+
+/* =====================================================================
+   Data-led landing page: panels, example report and motion.
+   Everything animated here is transform, opacity or stroke only, and all
+   of it stops for visitors who ask for reduced motion.
+   ===================================================================== */
+:root{--mono:ui-monospace,"Cascadia Code",Consolas,"Courier New",monospace}
+.kick{display:block;margin-bottom:12px;font:600 .9rem/1 var(--mono);letter-spacing:.06em;color:var(--green-deep)}
+.sec--navy .kick,.cta .kick{color:var(--green)}
+em{font-style:normal}
+
+/* Hero: data streams running along the grid */
+.streams{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.streams i{position:absolute;left:0;width:120px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--green));opacity:.7;animation:flow 7s linear infinite}
+.streams i:nth-child(1){top:111px;animation-duration:8s}
+.streams i:nth-child(2){top:223px;animation-duration:11s;animation-delay:-4s;background:linear-gradient(90deg,transparent,var(--blue))}
+.streams i:nth-child(3){top:335px;animation-duration:9s;animation-delay:-2s}
+.streams i:nth-child(4){top:447px;animation-duration:13s;animation-delay:-7s;background:linear-gradient(90deg,transparent,var(--blue))}
+.streams i:nth-child(5){top:559px;animation-duration:10s;animation-delay:-5s}
+.streams i:nth-child(6){top:167px;animation-duration:15s;animation-delay:-9s;width:70px;opacity:.45}
+@keyframes flow{from{transform:translateX(-140px)}to{transform:translateX(100vw)}}
+
+/* Hero: data panels layered on the client mockup */
+.panel{position:absolute;z-index:2;width:46%;padding:10px 12px 12px;border-radius:12px;background:var(--navy-2);border:1px solid #4D6690;box-shadow:6px 6px 0 rgba(4,12,26,.6);color:#fff;animation:fade .5s ease-out both,bob 5s ease-in-out infinite alternate}
+.panel--line{top:-22px;right:0;animation-delay:1s,1.5s}
+.panel--bars{bottom:36px;right:0;animation-delay:1.2s,2.1s}
+.panel__t{font:600 .68rem/1.3 var(--mono);color:var(--pale);display:flex;justify-content:space-between;gap:6px}
+.panel__t em,.kpis em,.dash figcaption em{font:600 .62rem/1.6 var(--mono);padding:0 6px;border-radius:999px;background:rgba(255,196,46,.16);color:var(--yellow);white-space:nowrap}
+.panel svg{width:100%;height:46px;margin:6px 0 4px;overflow:visible}
+.spark{fill:none;stroke:var(--green);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line 1.6s cubic-bezier(.3,.7,.2,1) 1.3s forwards}
+.spark-fill{fill:rgba(31,203,110,.14);opacity:0;animation:fade .8s ease-out 2.2s forwards}
+.panel__n{font-size:.72rem;color:var(--pale)}
+.panel__n b{font:800 1.25rem/1 var(--head);color:#fff;margin-right:4px}
+.panel--bars ul{display:grid;gap:6px;margin-top:8px}
+.panel--bars li{position:relative;font:500 .66rem/1.4 var(--mono);color:var(--pale);padding-bottom:7px}
+.panel--bars li::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:calc(var(--w)*100%);border-radius:2px;background:var(--blue);transform-origin:left;transform:scaleX(0);animation:grow-x .9s cubic-bezier(.2,.8,.2,1) forwards}
+.panel--bars li:nth-child(1)::after{animation-delay:1.5s;background:var(--green)}
+.panel--bars li:nth-child(2)::after{animation-delay:1.65s}
+.panel--bars li:nth-child(3)::after{animation-delay:1.8s}
+.panel--bars li:nth-child(4)::after{animation-delay:1.95s}
+@keyframes fade{from{opacity:0}}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-9px)}}
+@keyframes draw-line{to{stroke-dashoffset:0}}
+@keyframes grow-x{to{transform:scaleX(1)}}
+.stage--solo .panel{display:none}
+@media (min-width:900px){.panel{width:44%;padding:12px 14px 14px}.panel--line{top:-34px;right:-6px}.panel--bars{bottom:44px;right:-6px}.panel__t{font-size:.74rem}.panel svg{height:56px}}
+
+/* Ticker under the hero */
+.ticker{position:relative;border-top:1px solid var(--navy-line);overflow:hidden;padding:13px 0;font:600 .82rem/1 var(--mono);color:var(--silver);white-space:nowrap}
+.ticker div{display:inline-flex;animation:tick 38s linear infinite}
+.ticker span{padding:0 22px;position:relative}
+.ticker span::after{content:"\2192";position:absolute;right:-7px;color:var(--green)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* Query card: the lines type themselves, then the answer appears */
+.ql{display:inline-block}
+.js .query .ql{clip-path:inset(0 100% 0 0)}
+.js .query.in .ql{animation:type .45s steps(22,end) forwards;animation-delay:calc(var(--l)*.3s + .3s)}
+@keyframes type{to{clip-path:inset(0 0 0 0)}}
+.query pre::after{content:"";display:inline-block;width:9px;height:1.1em;margin-left:4px;vertical-align:text-bottom;background:var(--green);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.qout{width:calc(100% - 40px);margin:0 20px 20px;border-collapse:collapse;font:500 .9rem/1.5 var(--mono);color:#E6EEF7}
+.qout caption{text-align:left;padding-bottom:8px;font-size:.72rem;color:var(--yellow)}
+.qout th{text-align:left;font-weight:600;color:var(--silver);border-bottom:1px solid var(--navy-line);padding:6px 0}
+.qout td{padding:6px 0;border-bottom:1px solid rgba(39,64,106,.6)}
+.qout td:not(:first-child),.qout th:not(:first-child){text-align:right}
+.js .query .qout{opacity:0;transform:translateY(10px);transition:opacity .5s ease-out 3s,transform .5s ease-out 3s}
+.js .query.in .qout{opacity:1;transform:none}
+
+/* The example monthly report */
+.dash{border-radius:22px;border:1px solid var(--navy-line);background:var(--navy-2);overflow:hidden;box-shadow:12px 12px 0 var(--green)}
+.dash__bar{display:flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;background:#1A3158}
+.dash__bar i{width:10px;height:10px;border-radius:50%;background:#4D6690}
+.dash__bar b{margin-left:10px;font:500 .82rem/1 var(--mono);color:var(--pale);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dash__bar span{margin-left:auto;padding:4px 12px;border-radius:999px;background:var(--yellow);color:var(--navy);font:700 .78rem/1.2 Figtree,sans-serif;white-space:nowrap}
+.kpis{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--navy-line)}
+.kpis li{padding:18px 16px;display:grid;gap:6px;justify-items:start;border-right:1px solid var(--navy-line);border-top:1px solid var(--navy-line)}
+.kpis li:nth-child(2n){border-right:0}
+.kpis span{font:500 .8rem/1.2 var(--mono);color:var(--silver)}
+.kpis b{font:800 clamp(1.6rem,4vw + .6rem,2.6rem)/1 var(--head);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.dash__grid{display:grid}
+.dash figure{padding:20px 16px;border-bottom:1px solid var(--navy-line)}
+.dash figcaption{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-bottom:14px;font:500 .82rem/1.4 var(--mono);color:var(--pale)}
+.chart svg{width:100%;height:auto;overflow:visible}
+.chart .grid path{stroke:var(--navy-line);stroke-width:1;fill:none}
+.chart .line{fill:none;stroke:var(--green);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.chart .area{fill:rgba(31,203,110,.13);opacity:0}
+.chart .dots circle{fill:var(--navy-2);stroke:var(--green);stroke-width:3;opacity:0}
+.chart .ticks text{fill:var(--silver);font:500 11px var(--mono);text-anchor:middle}
+.dash.in .chart .line{animation:draw-line 1.8s cubic-bezier(.3,.7,.2,1) .4s forwards}
+.dash.in .chart .area{animation:fade 1s ease-out 1.6s forwards}
+.dash.in .chart .dots circle{animation:pop .4s cubic-bezier(.34,1.56,.64,1) forwards}
+.dash.in .chart .dots circle:nth-child(1){animation-delay:.5s}.dash.in .chart .dots circle:nth-child(2){animation-delay:.95s}.dash.in .chart .dots circle:nth-child(3){animation-delay:1.4s}.dash.in .chart .dots circle:nth-child(4){animation-delay:1.85s}
+@keyframes pop{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+.chart .dots circle{transform-box:fill-box;transform-origin:center}
+.chan ul{display:grid;gap:14px}
+.chan li{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;font-size:.95rem}
+.chan li i{grid-column:1/-1;grid-row:2;height:10px;border-radius:5px;background:var(--navy);overflow:hidden;position:relative}
+.chan li i::after{content:"";position:absolute;inset:0;width:calc(var(--w)*100%);border-radius:5px;background:var(--blue);transform-origin:left;transform:scaleX(0)}
+.chan li:first-child i::after{background:var(--green)}
+.chan b{font:700 1rem var(--mono)}
+.dash.in .chan li i::after{animation:grow-x 1s cubic-bezier(.2,.8,.2,1) forwards}
+.dash.in .chan li:nth-child(1) i::after{animation-delay:.5s}.dash.in .chan li:nth-child(2) i::after{animation-delay:.65s}.dash.in .chan li:nth-child(3) i::after{animation-delay:.8s}.dash.in .chan li:nth-child(4) i::after{animation-delay:.95s}
+.funnel ol{display:grid;gap:8px}
+.funnel li{position:relative;display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:10px;font-weight:600;isolation:isolate}
+.funnel li::before{content:"";position:absolute;z-index:-1;left:0;top:0;bottom:0;width:calc(var(--w)*100%);border-radius:10px;background:#1E3A6B;transform-origin:left;transform:scaleX(0)}
+.funnel li:last-child::before{background:var(--green-deep)}
+.funnel b{font-family:var(--mono)}
+.dash.in .funnel li::before{animation:grow-x .9s cubic-bezier(.2,.8,.2,1) forwards}
+.dash.in .funnel li:nth-child(1)::before{animation-delay:.7s}.dash.in .funnel li:nth-child(2)::before{animation-delay:.95s}.dash.in .funnel li:nth-child(3)::before{animation-delay:1.2s}
+.dash__read{padding:20px 16px 22px;color:var(--pale);font-size:1.05rem}
+.dash__read b{color:#fff}
+.report__cta{margin-top:44px}
+@media (min-width:760px){
+  .kpis{grid-template-columns:repeat(4,1fr)}
+  .kpis li{border-top:0;padding:24px 22px}.kpis li:nth-child(2n){border-right:1px solid var(--navy-line)}.kpis li:last-child{border-right:0}
+  .dash__grid{grid-template-columns:1.3fr 1fr}
+  .dash figure{padding:26px 24px}
+  .chart{grid-row:span 2;border-right:1px solid var(--navy-line)}
+  .dash__read{padding:24px 24px 28px}
+}
+
+/* Scroll scenes: these follow the scrollbar, in browsers that support it */
+@supports (animation-timeline:view()){
+  .hero__text{animation:hero-out linear both;animation-timeline:scroll(root);animation-range:120px 640px}
+  @keyframes hero-out{to{opacity:.25;transform:translateY(-36px)}}
+  .dash{animation:tilt-in linear both;animation-timeline:view();animation-range:entry 0% cover 32%}
+  @keyframes tilt-in{from{transform:perspective(1400px) rotateX(16deg) scale(.92)}to{transform:perspective(1400px) rotateX(0) scale(1)}}
+  .case .frame img{animation:zoom-out linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+  @keyframes zoom-out{from{transform:scale(1.18)}to{transform:scale(1)}}
+  .steps{position:relative}
+  .steps::before{content:"";position:absolute;left:0;right:0;top:-18px;height:4px;border-radius:2px;background:var(--green);transform-origin:left;animation:grow-x linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+  .founder{animation:slide-in linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+  @keyframes slide-in{from{transform:translateX(60px) rotate(1.5deg)}to{transform:none}}
+  .cta h2{animation:rise-in linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+  @keyframes rise-in{from{transform:translateY(50px) scale(.94);opacity:.3}to{transform:none;opacity:1}}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .streams,.ticker{display:none}
+  .js .query .ql{clip-path:none}
+  .js .query .qout{opacity:1;transform:none}
+  .spark,.chart .line{stroke-dashoffset:0}
+  .spark-fill,.chart .area,.chart .dots circle{opacity:1}
+  .panel--bars li::after,.chan li i::after,.funnel li::before{transform:none}
+}
+.panel--bars{bottom:6px}
+@media (min-width:900px){.panel--bars{bottom:4px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://absogrow.github.io/#business","name":"Absogrow AI","description":"Absogrow AI is a data-led digital marketing and AI automation agency in Nairobi, Kenya, founded by data scientist, machine learning expert and professional content creator Emilio Mutisya. It builds websites, runs social media and paid ads, and sets up AI automation for Kenyan businesses such as hotels, dental clinics and opticians, and it measures the results so every decision is based on numbers.","url":"https://absogrow.github.io/","logo":"https://absogrow.github.io/img/logo-512x512.png","image":"https://absogrow.github.io/img/share-1200x630.jpg","telephone":"+254745317709","email":"absogrow@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Nairobi","addressCountry":"KE"},"areaServed":{"@type":"Country","name":"Kenya"},"currenciesAccepted":"KES","slogan":"Your business is good. Online, it should look it.","knowsAbout":["Websites","Social media and content","Paid ads","SEO and Google Business Profile","Analytics and reporting","Video","AI automation","Digital marketing for hotels and lodges","Digital marketing for dental and medical clinics","Digital marketing for opticians","Digital marketing for shops and online stores","Digital marketing for restaurants and cafes","Digital marketing for car dealers"],"sameAs":["https://instagram.com/absogrow_ai"],"founder":{"@id":"https://absogrow.github.io/#founder"},"hasOfferCatalog":{"@id":"https://absogrow.github.io/#packages"}},{"@type":"Person","@id":"https://absogrow.github.io/#founder","name":"Emilio Mutisya","jobTitle":"Founder, Data Scientist and Content Creator","worksFor":{"@id":"https://absogrow.github.io/#business"},"description":"I am a data scientist and machine learning expert with 4 years in digital marketing, so I do not guess. I use Python, SQL and Power BI to look at the numbers before we touch your marketing: how fast your website loads, what people search before they find you, and which posts and adverts bring enquiries. Then we put your budget where the customers are.","alumniOf":{"@type":"EducationalOrganization","name":"ALX"},"knowsAbout":["Machine learning","Data science","Python","SQL","Power BI","Content creation","Video","Analytics and reporting","Marketing strategy","AI automation"],"image":"https://absogrow.github.io/uploads/a55c0a95e189-580x725.webp"},{"@type":"WebPage","@id":"https://absogrow.github.io/#webpage","url":"https://absogrow.github.io/","name":"Absogrow AI | Data-led digital marketing and AI automation in Nairobi","description":"Absogrow AI is a data-led marketing agency in Nairobi, run by a data scientist. Websites, social media, ads and AI automation, measured so you see what brings customers. Free review on WhatsApp.","inLanguage":"en-KE","isPartOf":{"@id":"https://absogrow.github.io/#website"},"about":{"@id":"https://absogrow.github.io/#business"},"breadcrumb":{"@id":"https://absogrow.github.io/#breadcrumb"},"primaryImageOfPage":"https://absogrow.github.io/img/share-1200x630.jpg","dateModified":"2026-11-26T15:50:29.163Z"},{"@type":"WebSite","@id":"https://absogrow.github.io/#website","url":"https://absogrow.github.io/","name":"Absogrow AI","inLanguage":"en-KE","publisher":{"@id":"https://absogrow.github.io/#business"},"dateModified":"2026-11-26T15:50:29.163Z"},{"@type":"BreadcrumbList","@id":"https://absogrow.github.io/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://absogrow.github.io/"}]},{"@type":"Service","name":"Websites","description":"Fast, mobile-first websites that turn visitors into calls and bookings.","serviceType":"Websites","url":"https://absogrow.github.io/services/websites/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Websites: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Design made for phones first"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Clear buttons to call, WhatsApp or book"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Fast loading on mobile data"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Basic SEO and Google set-up"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Your own domain and logins handed over"}}]}},{"@type":"Service","name":"Social media and content","description":"Posts, reels and a plan your customers actually see.","serviceType":"Social media and content","url":"https://absogrow.github.io/services/social-media-and-content/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Social media and content: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"A monthly content plan"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Posts and reels designed and written for you"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Posting on the agreed days"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Replies to comments and messages on larger plans"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"A monthly report"}}]}},{"@type":"Service","name":"Paid ads","description":"Meta and Google ads aimed at the people who buy, with clear reporting.","serviceType":"Paid ads","url":"https://absogrow.github.io/services/paid-ads/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Paid ads: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Meta ads on Facebook and Instagram"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Google ads"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Audiences chosen around who buys from you"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ad designs and wording"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Clear reporting on what was spent and what came back"}}]}},{"@type":"Service","name":"SEO and Google Business Profile","description":"Show up when people nearby search for what you do.","serviceType":"SEO and Google Business Profile","url":"https://absogrow.github.io/services/seo-and-google-business-profile/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"SEO and Google Business Profile: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Google Business Profile set up or claimed"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Correct name, phone, hours and location"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Photos and regular updates"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"On-page SEO for your website"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Help asking real customers for reviews"}}]}},{"@type":"Service","name":"Analytics and reporting","description":"Tracking and monthly reports that show where your customers come from.","serviceType":"Analytics and reporting","url":"https://absogrow.github.io/services/analytics-and-reporting/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Analytics and reporting: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tracking set up on your website and adverts"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Enquiries traced back to the post, advert or search that brought them"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"A monthly report in plain English"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Clear recommendations on where to spend next"}}]}},{"@type":"Service","name":"Video","description":"Videography and editing for reels, adverts and events.","serviceType":"Video","url":"https://absogrow.github.io/services/video/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Video: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Filming at your business or event"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Editing for reels and adverts"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Captions and voiceover where needed"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Versions sized for each platform"}}]}},{"@type":"Service","name":"AI automation","description":"WhatsApp replies, booking follow-ups and lead tracking that run on their own.","serviceType":"AI automation","url":"https://absogrow.github.io/services/ai-automation/","provider":{"@id":"https://absogrow.github.io/#business"},"areaServed":{"@type":"Country","name":"Kenya"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"AI automation: what is included","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Instant WhatsApp replies to new enquiries"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking reminders and follow-ups"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Every lead saved in one list"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Set up around how your business already works"}}]}},{"@type":"OfferCatalog","@id":"https://absogrow.github.io/#packages","name":"Absogrow AI packages","itemListElement":[{"@type":"Offer","name":"Starter","description":"A website, or social media on one platform. Includes: Your choice: a mobile-first website, or one social media platform managed for you; 12 posts a month, 4 of them reels; 1 ad campaign set up and run; A monthly report. Price: From KES 15,000 per month for social media. A website is a one-off price, quoted separately.","priceSpecification":{"@type":"PriceSpecification","minPrice":15000,"priceCurrency":"KES"},"seller":{"@id":"https://absogrow.github.io/#business"}},{"@type":"Offer","name":"Growth","description":"A website plus social media plus ads. Includes: A fast, mobile-first website; Instagram, Facebook and TikTok managed for you; 20 posts a month, 8 of them reels; 2 ad campaigns set up and run; Replies to comments and messages; Google Business Profile kept up to date; A monthly report. Price: From KES 35,000 per month. The website is a one-off price, quoted separately.","priceSpecification":{"@type":"PriceSpecification","minPrice":35000,"priceCurrency":"KES"},"seller":{"@id":"https://absogrow.github.io/#business"}},{"@type":"Offer","name":"Automation","description":"Everything in Growth, plus AI follow-ups and lead tracking. Includes: Everything in Growth; WhatsApp auto-replies to new enquiries; Booking follow-ups and reminders; Lead tracking, so no enquiry is forgotten; A monthly strategy call; A report on the leads and bookings that came in. Price: From KES 60,000 per month. The website and automation setup are one-off prices, quoted separately.","priceSpecification":{"@type":"PriceSpecification","minPrice":60000,"priceCurrency":"KES"},"seller":{"@id":"https://absogrow.github.io/#business"}}]},{"@type":"FAQPage","@id":"https://absogrow.github.io/#faq","mainEntity":[{"@type":"Question","name":"How much does a website cost?","acceptedAnswer":{"@type":"Answer","text":"A new website from Absogrow AI starts from KES 70,000, and a revamp of a website you already have starts from KES 50,000. The exact price depends on the pages and features you need, so we send a written quote in KES after a free review."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"A new website usually takes 5 to 7 days once we have your photos and text. A revamp of an existing website usually takes 3 to 5 days."}},{"@type":"Question","name":"Do I own my website?","acceptedAnswer":{"@type":"Answer","text":"Yes. Once it is paid for, the website, the domain name and everything on it belong to you, and we hand over all the logins."}},{"@type":"Question","name":"Can you manage our Instagram and Facebook?","acceptedAnswer":{"@type":"Answer","text":"Yes. Absogrow AI plans, creates and posts your content on Instagram and Facebook, and can run Meta ads alongside it. Monthly social media management starts from KES 15,000, and the money spent on ads is paid by you directly to Meta."}},{"@type":"Question","name":"What does \"AI automation\" mean for a business like mine?","acceptedAnswer":{"@type":"Answer","text":"It means the routine follow-up happens on its own. New WhatsApp enquiries get an instant reply, customers get booking reminders, and every lead is saved in one list so none is forgotten. It suits hotels, clinics, shops and any Kenyan business that gets a lot of enquiries."}}]}]}</script>
 </head>
@@ -464,6 +612,7 @@ a{color:inherit;touch-action:manipulation}
 </header>
 <main id="main">
 <section class="hero" id="top">
+  <div class="streams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero__grid">
     <div class="hero__text">
       <h1><span class="w"><span style="--i:0">Your</span></span> <span class="w"><span style="--i:1">business</span></span> <span class="w"><span style="--i:2">is</span></span> <span class="w"><span style="--i:3">good.</span></span> <span class="hl"><span class="w"><span style="--i:4">Online,</span></span> <span class="w"><span style="--i:5">it</span></span> <span class="w"><span style="--i:6">should</span></span> <span class="w"><span style="--i:7">look</span></span> <span class="w"><span style="--i:8">it.</span></span></span></h1>
@@ -483,8 +632,18 @@ a{color:inherit;touch-action:manipulation}
     <div class="stage">
       <div class="frame stage__desk"><span class="frame__bar"><i></i><i></i><i></i><b>imaratools.co.ke</b></span><img src="/img/work/imara-960x600.webp" alt="The Imara Tools website on a computer screen" width="960" height="600" fetchpriority="high"></div>
       <div class="phone"><img src="/img/hero-phone-280x606.webp" alt="The Imara Tools website, built by Absogrow AI, shown on a phone" width="280" height="606" fetchpriority="high"></div>
+      <div class="panel panel--line" aria-hidden="true">
+        <p class="panel__t">Enquiries per week <em>example</em></p>
+        <svg viewBox="0 0 200 64" preserveAspectRatio="none"><path class="spark-fill" d="M0 52 L50 44 L100 46 L150 26 L200 10 V64 H0Z"/><path class="spark" pathLength="1" d="M0 52 L50 44 L100 46 L150 26 L200 10"/></svg>
+        <p class="panel__n"><b data-count="128">128</b> this month</p>
+      </div>
+      <div class="panel panel--bars" aria-hidden="true">
+        <p class="panel__t">Where they came from <em>example</em></p>
+        <ul><li style="--w:1">Google</li><li style="--w:.73">Instagram</li><li style="--w:.46">WhatsApp</li><li style="--w:.27">Ads</li></ul>
+      </div>
     </div>
   </div>
+  <div class="ticker" aria-hidden="true"><div><span>website visits</span><span>enquiries</span><span>bookings</span><span>cost per booking</span><span>measured every month</span><span>reported in plain English</span><span>website visits</span><span>enquiries</span><span>bookings</span><span>cost per booking</span><span>measured every month</span><span>reported in plain English</span></div></div>
 </section>
 <section class="band" aria-labelledby="clients-h">
   <div class="wrap">
@@ -507,7 +666,7 @@ a{color:inherit;touch-action:manipulation}
 <section class="sec sec--white" id="difference">
   <div class="wrap edge">
     <div>
-      <h2 data-r>What makes Absogrow AI different?</h2>
+      <h2 data-r><span class="kick" aria-hidden="true">01 /</span>What makes Absogrow AI different?</h2>
       <p data-r style="--i:1" class="sec__lead">It is run by a data scientist. Emilio Mutisya uses Python, SQL, Power BI and machine learning to find what actually brings you customers, then puts your budget there.</p>
       <ol data-s class="edge__list">
         <li><h3>We measure before we market</h3><p>The free review checks your website speed, Google listing and social pages, and puts what is costing you customers in a written report.</p></li>
@@ -518,22 +677,73 @@ a{color:inherit;touch-action:manipulation}
     </div>
     <figure data-r class="query">
       <figcaption><i></i><i></i><i></i><b>monthly_report.sql</b></figcaption>
-      <pre aria-label="An example of the kind of question we ask of your marketing numbers each month"><code><span class="q-c">-- What we ask of your numbers every month</span>
-<span class="q-k">SELECT</span> channel,
-       enquiries,
-       bookings,
-       cost_per_booking
-<span class="q-k">FROM</span>   your_marketing
-<span class="q-k">WHERE</span>  month = <span class="q-s">'this month'</span>
-<span class="q-k">ORDER BY</span> bookings <span class="q-k">DESC</span>;</code></pre>
+      <pre aria-label="An example of the kind of question we ask of your marketing numbers each month"><code><span class="ql" style="--l:0"><span class="q-c">-- What we ask of your numbers every month</span></span>
+<span class="ql" style="--l:1"><span class="q-k">SELECT</span> channel,</span>
+<span class="ql" style="--l:2">       enquiries,</span>
+<span class="ql" style="--l:3">       bookings,</span>
+<span class="ql" style="--l:4">       cost_per_booking</span>
+<span class="ql" style="--l:5"><span class="q-k">FROM</span>   your_marketing</span>
+<span class="ql" style="--l:6"><span class="q-k">WHERE</span>  month = <span class="q-s">'this month'</span></span>
+<span class="ql" style="--l:7"><span class="q-k">ORDER BY</span> bookings <span class="q-k">DESC</span>;</span></code></pre>
+      <table class="qout">
+        <caption>Example output</caption>
+        <thead><tr><th scope="col">channel</th><th scope="col">enquiries</th><th scope="col">bookings</th></tr></thead>
+        <tbody><tr><td>Google search</td><td>52</td><td>21</td></tr><tr><td>Instagram</td><td>38</td><td>9</td></tr><tr><td>WhatsApp</td><td>24</td><td>8</td></tr><tr><td>Meta ads</td><td>14</td><td>3</td></tr></tbody>
+      </table>
       <p>You get the answer in plain English, in your monthly report.</p>
     </figure>
+  </div>
+</section>
+<section class="sec sec--navy report" id="report">
+  <div class="wrap">
+    <h2 data-r><span class="kick" aria-hidden="true">02 /</span>What does your monthly report look like?</h2>
+    <p data-r style="--i:1" class="sec__lead">Like this: a few numbers that matter, where your customers came from, and what we will do next. Every figure below is an example for illustration, not a client's results.</p>
+    <div data-r class="dash">
+      <div class="dash__bar"><i></i><i></i><i></i><b>absogrow / monthly-report</b><span>Example data</span></div>
+      <ul class="kpis">
+        <li><span>Website visits</span><b data-count="3480">3,480</b><em>example</em></li>
+        <li><span>Enquiries</span><b data-count="128">128</b><em>example</em></li>
+        <li><span>Bookings</span><b data-count="41">41</b><em>example</em></li>
+        <li><span>Cost per booking</span><b data-count="310" data-pre="KES ">KES 310</b><em>example</em></li>
+      </ul>
+      <div class="dash__grid">
+        <figure class="chart">
+          <figcaption>Enquiries per week: 22, 27, 35 and 44 <em>example</em></figcaption>
+          <svg viewBox="0 0 320 150" aria-hidden="true">
+            <g class="grid"><path d="M30 120H300M30 90H300M30 60H300M30 30H300"/></g>
+            <path class="area" d="M30 76 L115 66 L200 50 L285 32 V120 H30Z"/>
+            <path class="line" pathLength="1" d="M30 76 L115 66 L200 50 L285 32"/>
+            <g class="dots"><circle cx="30" cy="76" r="4"/><circle cx="115" cy="66" r="4"/><circle cx="200" cy="50" r="4"/><circle cx="285" cy="32" r="5"/></g>
+            <g class="ticks"><text x="30" y="140">W1</text><text x="115" y="140">W2</text><text x="200" y="140">W3</text><text x="285" y="140">W4</text></g>
+          </svg>
+        </figure>
+        <figure class="chan">
+          <figcaption>Enquiries by channel <em>example</em></figcaption>
+          <ul>
+            <li style="--w:1"><span>Google search</span><i></i><b>52</b></li>
+            <li style="--w:.73"><span>Instagram</span><i></i><b>38</b></li>
+            <li style="--w:.46"><span>WhatsApp</span><i></i><b>24</b></li>
+            <li style="--w:.27"><span>Meta ads</span><i></i><b>14</b></li>
+          </ul>
+        </figure>
+        <figure class="funnel">
+          <figcaption>From visit to booking <em>example</em></figcaption>
+          <ol>
+            <li style="--w:1"><span>Visits</span><b>3,480</b></li>
+            <li style="--w:.56"><span>Enquiries</span><b>128</b></li>
+            <li style="--w:.34"><span>Bookings</span><b>41</b></li>
+          </ol>
+        </figure>
+      </div>
+      <p class="dash__read"><b>In plain English:</b> Google search brought the most bookings. Instagram brought plenty of enquiries but fewer bookings, so next month more of the budget goes to search.</p>
+    </div>
+    <p data-r class="report__cta"><a class="btn btn--lg" href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business."><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.5A8 8 0 1 1 21 12z"/></svg>Get a free review of your numbers</a></p>
   </div>
 </section>
 <section class="sec" id="services">
   <div class="wrap split">
     <div class="split__head">
-      <h2 data-r>What does Absogrow AI do?</h2>
+      <h2 data-r><span class="kick" aria-hidden="true">03 /</span>What does Absogrow AI do?</h2>
       <p data-r style="--i:1" class="sec__lead">We build websites, run social media and paid ads, and set up AI automation for Kenyan businesses. Here is each service in one line.</p>
       <a class="link" href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business.">Ask about a service</a>
     </div>
@@ -551,7 +761,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="sec sec--white" id="industries">
   <div class="wrap">
-    <h2 data-r>Who do we work with?</h2>
+    <h2 data-r><span class="kick" aria-hidden="true">04 /</span>Who do we work with?</h2>
     <p data-r style="--i:1" class="sec__lead">We work with local Kenyan businesses that serve customers face to face. These are the ones we know best.</p>
     <ul data-s class="sectors">
       <li><span class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8M3 14h18M3 18v2M21 18v2M7 8V6h10v2"/></svg></span><h3><a href="/for/hotels-and-lodges/">Hotels and lodges<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></h3><p>A website guests can book from, a Google listing that shows up, and enquiries answered on WhatsApp.</p></li>
@@ -565,7 +775,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="sec sec--navy" id="work">
   <div class="wrap">
-    <h2 data-r>Websites and work we've done</h2>
+    <h2 data-r><span class="kick" aria-hidden="true">05 /</span>Websites and work we've done</h2>
     <p data-r style="--i:1" class="sec__lead">These are real, live projects for Kenyan businesses. Tap a website to visit it.</p>
     <div data-s class="cases">
       <article class="case">
@@ -613,7 +823,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="sec sec--white" id="how">
   <div class="wrap">
-    <h2 data-r>How does it work?</h2>
+    <h2 data-r><span class="kick" aria-hidden="true">06 /</span>How does it work?</h2>
     <p data-r style="--i:1" class="sec__lead">It takes three steps: a free review, a clear plan with a price, then we build it and report every month.</p>
     <ol data-s class="steps">
       <li><span class="steps__n" aria-hidden="true">1</span><h3>Free review</h3><p>We look at your website, Google listing and social pages and send you what is costing you customers.</p></li>
@@ -625,7 +835,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="sec sec--navy" id="why">
   <div class="wrap">
-    <h2 data-r>Why choose Absogrow AI?</h2>
+    <h2 data-r><span class="kick" aria-hidden="true">07 /</span>Why choose Absogrow AI?</h2>
     <p data-r style="--i:1" class="sec__lead">Because you know what you are getting before you pay, and you can see what changed every month.</p>
     <ul data-s class="why">
       <li><span class="why__tick"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3>A free review first</h3><p>You see what is costing you customers before you pay for anything.</p></li>
@@ -640,7 +850,7 @@ a{color:inherit;touch-action:manipulation}
 <section class="sec" id="about">
   <div class="wrap about about--photo">
     <div>
-      <h2 data-r>Who is behind Absogrow AI?</h2>
+      <h2 data-r><span class="kick" aria-hidden="true">08 /</span>Who is behind Absogrow AI?</h2>
       <p data-r style="--i:1" class="sec__lead">Absogrow AI was started and is led by Emilio Mutisya, Founder, Data Scientist and Content Creator, in Nairobi, Kenya.</p>
     </div>
     <figure data-r class="founder founder--photo">
@@ -657,7 +867,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="sec sec--white" id="pricing">
   <div class="wrap">
-    <h2 data-r>Pricing built around what you need</h2>
+    <h2 data-r><span class="kick" aria-hidden="true">09 /</span>Pricing built around what you need</h2>
     <p data-r style="--i:1" class="sec__lead">Every business is different. Tell us what you want and we'll send a clear quote in KES, with no hidden costs. These packages are starting points.</p>
     <div data-s class="packs">
       <article class="pack">
@@ -698,7 +908,7 @@ a{color:inherit;touch-action:manipulation}
 <section class="sec" id="faq">
   <div class="wrap split">
     <div class="split__head">
-      <h2 data-r>Common questions</h2>
+      <h2 data-r><span class="kick" aria-hidden="true">10 /</span>Common questions</h2>
       <p data-r style="--i:1" class="sec__lead">Short answers to what business owners ask us most.</p>
       <a class="link" href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business.">Ask your own question</a>
     </div>
@@ -713,7 +923,7 @@ a{color:inherit;touch-action:manipulation}
 </section>
 <section class="cta" id="contact">
   <div class="wrap">
-    <h2 data-r>Want to know what your website is costing you? <span class="hl">Get a free review.</span></h2>
+    <h2 data-r><span class="kick" aria-hidden="true">11 /</span>Want to know what your website is costing you? <span class="hl">Get a free review.</span></h2>
     <div data-s class="reach">
       <a class="reach__main" href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business."><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.5A8 8 0 1 1 21 12z"/></svg><span><b>Message us on WhatsApp</b>0745 317 709</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
       <a href="mailto:absogrow@gmail.com"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><b>Email us</b>absogrow@gmail.com</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
@@ -732,7 +942,7 @@ a{color:inherit;touch-action:manipulation}
       <p><a href="/about/">About Emilio Mutisya</a></p>
     </div>
     <div>
-      <h2 data-r>Contact</h2>
+      <h2 data-r><span class="kick" aria-hidden="true">12 /</span>Contact</h2>
       <ul>
         <li>WhatsApp: <a href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business.">0745 317 709</a></li>
         <li>Phone: <a href="tel:+254745317709">0745 317 709</a></li>
@@ -749,7 +959,7 @@ a{color:inherit;touch-action:manipulation}
     <p>Last updated <time datetime="2026-11-26">26 November 2026</time></p>
   </div>
 </footer>
-<script>(function(){var d=document;d.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open')})});if(!d.documentElement.classList.contains('js'))return;var q=[],t;var io=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;x.target.classList.add('in');io.unobserve(x.target);q.push(x.target)});clearTimeout(t);t=setTimeout(function(){q.splice(0).forEach(function(el){el.classList.add('done')})},900)},{rootMargin:'0px 0px 8% 0px'});d.querySelectorAll('[data-r],[data-s]>*').forEach(function(el){io.observe(el)})})()</script>
+<script>(function(){var d=document;d.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open')})});if(!d.documentElement.classList.contains('js'))return;var calm=matchMedia('(prefers-reduced-motion: reduce)').matches;function cnt(r){if(calm)return;r.querySelectorAll('[data-count]').forEach(function(n){if(n.dataset.ran)return;n.dataset.ran=1;var end=+n.dataset.count,pre=n.dataset.pre||'',t0=performance.now();(function f(t){var p=Math.min(1,(t-t0)/1400),v=Math.round(end*(1-Math.pow(1-p,3)));n.textContent=pre+v.toLocaleString('en');if(p<1)requestAnimationFrame(f)})(t0)})}var q=[],t;var io=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;x.target.classList.add('in');cnt(x.target);io.unobserve(x.target);q.push(x.target)});clearTimeout(t);t=setTimeout(function(){q.splice(0).forEach(function(el){el.classList.add('done')})},900)},{rootMargin:'0px 0px 8% 0px'});d.querySelectorAll('[data-r],[data-s]>*').forEach(function(el){io.observe(el)});setTimeout(function(){var h=d.querySelector('.hero');if(h)cnt(h)},1300)})()</script>
 <a class="fab" href="https://wa.me/254745317709?text=Hi%20Absogrow%2C%20I&#39;d%20like%20a%20free%20website%20review%20for%20my%20business." aria-label="Message us on WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.5A8 8 0 1 1 21 12z"/></svg><span>WhatsApp</span></a>
 </body>
 </html>
